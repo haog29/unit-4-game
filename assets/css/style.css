@@ -1,0 +1,79 @@
+.instr {
+	border: 2px solid white;
+	padding: 2%;
+	background-color:plum;
+	color: white;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	-ms-border-radius:20px;
+	-o-border-radius:20px;
+	text-align: center;
+}
+.dispScore {
+	background-color:pink; 
+   color: white;
+   font-size: 20px;
+   margin: 10px;
+ 
+
+}
+ 
+.randNum {
+	border: 2px solid white;
+	padding: 3%;
+	background-color: plum; 
+	color: white;
+	font-size: 150%;  
+	border-radius:20px;
+	margin-left: 10px;
+}
+
+.totalEN {
+	border: 2px solid white;
+	padding: 2%;
+	background-color: plum;
+	border-radius:20px;
+	
+	
+}
+
+ .totalScore {
+ 	background-color:pink; 
+	color: white;
+	font-size: 20px;
+
+
+ }
+
+ .scoreDisplay {
+ 	border: 2px solid white;
+	padding: 3%; 
+	background-color:plum;
+	color: white;
+	font-size: 150%; 
+	border-radius:20px;
+
+ }
+
+ .wallpaper { 
+background-color: pink;
+
+ }
+
+ header {  
+	color: white;
+	background-color: skyblue;
+	text-align: center
+ 
+  }
+
+  h2 {
+	border: 2px solid white;
+
+  }
+
+  .wins, .losses { 
+	padding: 2%;
+	color: white;
+  }
