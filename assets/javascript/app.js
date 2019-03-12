@@ -65,15 +65,16 @@ $(document).ready(function() {
 			if(newEnScore === enerPick) { 
 				wins++ ; 
 				$(".wins").html("Wins: " + wins); 
-
+				alert('You Guessed it right!');
 					reset(); 
 			
 			} 
 
 			else if(newEnScore > enerPick) {
 				losses++ ; 
+				alert('You Guessed it wrong!');
 				$(".losses").html("Losses: " + losses); 
-					 
+				
 					reset(); 
 				
 			}
@@ -91,16 +92,19 @@ $(document).ready(function() {
 
 		if(newEnScore === enerPick) { 
 			wins++ ; 
+			alert('You Guessed it right!');
 			$(".wins").html("Wins: " + wins); 
 				// console.log("Wins: " + wins); 
-				alert('You Guessed it right!');
+				
 				reset(); 
+				
 		} 
 
 		else if(newEnScore > enerPick) {
 			losses++ ; 
-			$(".losses").html("Losses: " + losses); 
 			alert('You Guessed it wrong!');
+			$(".losses").html("Losses: " + losses); 
+		
 				reset(); 
 		}
 
