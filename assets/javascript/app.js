@@ -93,9 +93,8 @@ $(document).ready(function() {
 		if(newEnScore === enerPick) { 
 			wins++ ; 
 			alert('You Guessed it right!');
-			$(".wins").html("Wins: " + wins); 
 				// console.log("Wins: " + wins); 
-				
+			$(".wins").html("Wins: " + wins); 
 				reset(); 
 				
 		} 
