@@ -26,7 +26,7 @@ $(document).ready(function() {
 	 shFour = Math.floor(Math.random() * 12) + 1; 
 	
 		$("#img4").html("<img src=" + "assets/images/sh4.jpg" + " value=" + shFour + ">");
-		
+
 		
 	var wins = 0; 
 	var losses = 0; 
@@ -39,7 +39,7 @@ $(document).ready(function() {
 		$(".randNum").html(enerPick); 
 
 		score = 0; 
-		$(".scoreDisplay").html(score); 
+		$(".enDisplay").html(score); 
 
 		shOne = Math.floor(Math.random() * 12) + 1;  
 		 
@@ -58,11 +58,11 @@ $(document).ready(function() {
 		$("#img4").html("<img src=" + "assets/images/sh4.jpg" + " value=" + shFour + ">");
 
 		$("img").on("click", function () {
-			var newScore = score += parseInt($(this).attr("value")); 
+			var newEnScore = score += parseInt($(this).attr("value")); 
 				
-			$(".scoreDisplay").html(newScore); 
+			$(".enDisplay").html(newEnScore); 
 
-			if(newScore === enerPick) { 
+			if(newEnScore === enerPick) { 
 				wins++ ; 
 				$(".wins").html("Wins: " + wins); 
 
@@ -70,7 +70,7 @@ $(document).ready(function() {
 			
 			} 
 
-			else if(newScore > enerPick) {
+			else if(newEnScore > enerPick) {
 				losses++ ; 
 				$(".losses").html("Losses: " + losses); 
 					 
@@ -85,21 +85,20 @@ $(document).ready(function() {
 	}
 
 	$("img").on("click", function () {
-		var newScore = score += parseInt($(this).attr("value")); 
-			// console.log("New Score: " + newScore); 
-		$(".scoreDisplay").html(newScore); 
+		var newEnScore = score += parseInt($(this).attr("value")); 
+			// console.log("New Score: " + newEnScore); 
+		$(".enDisplay").html(newEnScore); 
 
-		if(newScore === compPick) { 
+		if(newEnScore === enerPick) { 
 			wins++ ; 
 			$(".wins").html("Wins: " + wins); 
 				// console.log("Wins: " + wins); 
 				reset(); 
 		} 
 
-		else if(newScore > compPick) {
+		else if(newEnScore > enerPick) {
 			losses++ ; 
 			$(".losses").html("Losses: " + losses); 
-				// console.log("Losses: " + losses); 
 				reset(); 
 		}
 

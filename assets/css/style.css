@@ -38,7 +38,7 @@
 	
 }
 
- .totalScore {
+ .enLevel {
  	background-color:pink; 
 	color: white;
 	font-size: 20px;
@@ -46,7 +46,7 @@
 
  }
 
- .scoreDisplay {
+ .enDisplay {
  	border: 2px solid white;
 	padding: 3%; 
 	background-color:plum;
@@ -77,3 +77,15 @@ background-color: pink;
 	padding: 2%;
 	color: white;
   }
+
+  button {
+	background-color: skyblue;
+	padding  :30px;
+	margin:5px;
+}
+
+footer {
+	padding:25px;
+	margin:10px;
+	background-color: skyblue;
+}
