@@ -93,12 +93,14 @@ $(document).ready(function() {
 			wins++ ; 
 			$(".wins").html("Wins: " + wins); 
 				// console.log("Wins: " + wins); 
+				alert('You Guessed it right!');
 				reset(); 
 		} 
 
 		else if(newEnScore > enerPick) {
 			losses++ ; 
 			$(".losses").html("Losses: " + losses); 
+			alert('You Guessed it wrong!');
 				reset(); 
 		}
 
